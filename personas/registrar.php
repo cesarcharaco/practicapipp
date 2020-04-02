@@ -6,7 +6,7 @@
 <body>
 	<a href="PersonasControlador.php?operacion=index">Listar Personas</a><br>
 <a href="../index.php">Inicio</a><br>
-<form action="recibir_formulario.php" method="post" name="formulario">
+<form action="PersonasControlador.php" method="post" name="formulario">
 
 <table>
 	<tr>
@@ -26,7 +26,9 @@
 		
 	</tr>
 	<tr>
-		<td><input type="submit" name="enviar" value="Enviar"></td>
+		<td>
+			<input type="hidden" name="operacion" value="guardar">
+			<input type="submit" name="enviar" value="Enviar"></td>
 	</tr>
 </table>
 </form>

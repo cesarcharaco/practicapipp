@@ -50,7 +50,7 @@ public function guardar(){
 		</script>
 			<?php
 	} else {
-		$sql="INSERT INTO datos_personales(nombres,apellidos,cedula) VALUES('".$nombre."','".$apellidos."',".$cedula.")";
+		$sql="INSERT INTO datos_personales(nombres,apellidos,cedula) VALUES('".$nombres."','".$apellidos."',".$cedula.")";
 
 		$result=mysqli_query($conex,$sql);
 		if ($result) {
