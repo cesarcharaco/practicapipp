@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Pr&aacute;ctica  2</title>
+</head>
+<body>
+<a href="index.php">Volver al inicio</a>
+<h1>Prof. Ing. C&eacute;sar Characo</h1>
+<h6>Estudiantes de PIPP</h6>
+<p align="center" >Buenos D&iacute;as, mis queridos Peripat&eacute;ticos</p>
+
+<h2><a href="next_pag.html" style="text-decoration: none; color: purple">Pasar a la siguiente</a></h2>
+<!-- Tablas -->
+<form name="form1" action="recibir.php" method="POST" enctype="Multipart/form-data">
+<table width="100%" border="5" >
+	<tr >
+		<td>Nombre</td>
+		<td><input type="text" name="nombre" placeholder="Ingrese el Nombre" title="En este campo usted debe agregar el Nombre"></td>
+	</tr>
+	<tr>
+		<td>fecha de nacimiento</td>
+		<td><input type="date" name="fecha_nac" title="coloque su fecha de nacimiento"></td>
+		
+	</tr>
+	<tr>
+		<td>tel&eacute;fono</td>
+		<td><input type="number" name="telefono" title="coloque su n&uacute;mero de tel&eacute;fono"></td>
+
+		
+	</tr>
+	<tr>
+		<td>G&eacute;nero</td>
+		<td><input type="radio" name="genero" title="Acaba de seleccionar Masculino" value="Masculino" checked="checked">&nbsp;Masculino &nbsp;<input type="radio" name="genero" title="Acaba de seleccionar femenino" value="Femenino">&nbsp;Femenino &nbsp; <input type="radio" name="genero" title="Acaba de seleccionar Otro" value="Otro">&nbsp;Otro &nbsp; <input type="radio" name="genero" title="Acaba de seleccionar prefiero no decirlo" >&nbsp;Prefiero no decirlo &nbsp;</td>
+		
+	</tr>
+	<tr>
+		<td>Profesi&oacute;n</td>
+		<td>
+			<select name="profesion" title="Seleccione una profesi&oacute;n">
+				<option value="Informática">Inform&aacute;tica</option>
+				<option value="Mantenimiento">Mantenimiento</option>
+				<option value="Ama de casa">Ama de casa</option>
+			</select>
+		</td>
+
+		
+	</tr>
+<tr>
+	<td> Actividades recreativas</td>
+	<td> <input type="checkbox" name="beisbol" title="ha seleccionado beisbol" value="Si" > beisbol 
+
+   <input type="checkbox" name="futbol" title="ha seleccionado futbol" value="Si" > futbol
+
+   <input type="checkbox" name="basquet" title="ha seleccionado basquet" value="Si" > basquet
+
+
+
+
+	</td>
+
+
+</tr>
+<tr>
+	<td><strong>Direcci&oacute;n</strong></td>
+	<td>
+		<textarea name="direccion" placeholder="Ingrese la dirección de residencia" cols="50" rows="5"></textarea>
+	</td>
+</tr>
+<tr>
+	<td><strong>Color de ojos</strong></td>
+	<td>
+		<input type="color" name="color_ojos" title="Seleccione su color de ojos" value="#C0C0C0">
+	</td>
+</tr>
+<tr>
+	<td>Password</td>
+	<td><input type="password" name="clave" placeholder="Ingrese contraseña" title="Debe ingresar su contraseña con as siguientes caracteristicas .........."></td>
+</tr>
+<tr>
+	<td>Correo</td>
+	<td><input type="email" name="correo" title="Ingrese el correo electrónico" placeholder="Ej: example@gmail.com"></td>
+</tr>
+<tr>
+	<td>URL</td>
+	<td><input type="url" name="direccion_web" title="Ingrese la dirección web de la página" placeholder="Ej: midominio.com"></td>
+</tr>
+<tr>
+	<td><strong>Foto</strong></td>
+	<td><input type="file" name="foto" title="Seleccione el archivo de imagen" accept=".jpg,.png"> </td>
+</tr>
+<tr>
+	<td><strong>list de datalist</strong></td>
+	<td>
+		<input type="text" name="paises" list="paises" placeholder="Selecciona un país" title="Seleccione un país">
+		<datalist id="paises">
+			<option>Alemania</option>
+			<option>Bulgaria</option>
+			<option>Colombia</option>
+			<option>Dinamarca</option>
+			<option>España</option>
+			<option>Francia</option>
+			<option>Grecia</option>
+			<option>Haití</option>
+			<option>Italia</option>
+			<option>Jamaica</option>
+			<option>Kuwait</option>
+			<option>Libia</option>
+			<option>Marruecos</option>
+			<option>Nicaragua</option>
+			<option>Oceanía</option>
+			<option>Paraguay</option>
+			<option>Qatar</option>
+			<option>Rusia</option>
+			<option>Suiza</option>
+			<option>Tailandia</option>
+			<option>Uruguay</option>
+			<option>Venezuela</option>
+		</datalist>
+	</td>
+</tr>
+
+
+<tr>
+	<td></td>
+<td><input type="submit" name="guardar" value="Guardar" title="Enviar los datos a guardar">
+<input type="reset" name="borrar" value="Limpiar" title="Limpia los campos del formulario">
+</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
